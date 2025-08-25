@@ -1,0 +1,119 @@
+/* Confetti rơi */
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.9;
+  animation: fall 5s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Pháo hoa */
+.firework {
+  position: fixed;
+  width: 5px;
+  height: 5px;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: explode 1.2s ease-out forwards;
+}
+
+@keyframes explode {
+  from {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: inherit scale(0.2);
+    opacity: 0;
+  }
+}
+
+/* Ngôi sao lấp lánh */
+.star {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle 3s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes twinkle {
+  0%, 100% { transform: scale(0.5); opacity: 0.2; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+/* Thiệp rơi */
+.greeting-card {
+  position: fixed;
+  top: -50px;
+  font-size: 1rem;
+  padding: 8px 12px;
+  background: #fff0f5;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: drop 6s linear forwards;
+}
+
+@keyframes drop {
+  to {
+    transform: translateY(110vh) rotate(15deg);
+    opacity: 0.8;
+  }
+}
+
+/* Tiêu đề pháo hoa */
+/* .fireworks h2 {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  margin-top: 50px;
+  text-shadow: 0 0 10px yellow, 0 0 20px orange;
+  animation: glow 2s infinite alternate;
+} */
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px yellow, 0 0 10px orange; }
+  to { text-shadow: 0 0 20px red, 0 0 30px gold; }
+}
+
+/* Thiệp rơi */
+.greeting-card {
+  position: fixed;
+  top: -50px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid #ff69b4;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: drop 6s linear forwards;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@keyframes drop {
+  to {
+    transform: translateY(110vh) rotate(10deg);
+    opacity: 0.8;
+  }
+}

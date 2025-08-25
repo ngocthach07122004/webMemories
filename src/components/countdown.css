@@ -1,0 +1,81 @@
+.countdown {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 1.5rem;
+  gap: 10px;
+}
+
+.countdown div {
+  background: white;
+  padding: 6px 4px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.time-box {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 15px;
+  padding: 15px 20px;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+  width: 17%;
+}
+
+.time-box:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  animation: flip 1s ease-in-out;
+  color: #333;  
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  color: #333;
+  font-weight: 700; 
+}
+
+
+
+/* Hiệu ứng nhịp tim */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(37, 117, 252, 0.6); }
+  50% { box-shadow: 0 0 25px rgba(106, 17, 203, 0.9); }
+}
+
+/* Hiệu ứng flip cho số */
+@keyframes flip {
+  0% { transform: rotateX(90deg); opacity: 0; }
+  100% { transform: rotateX(0deg); opacity: 1; }
+}
+
+/* Responsive */
+/* @media (max-width: 600px) {
+  .time-box {
+    width: 65px;
+    padding: 10px 12px;
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+  .label {
+    font-size: 0.75rem;
+  }
+} */
+
