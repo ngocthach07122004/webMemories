@@ -27,7 +27,7 @@ export default function App() {
         <div>
           {" "}
           <h2 className="header_title">
-            🎉 Kỷ Niệm 20 Năm Ra Trường 🎉
+            🎉 20 Năm Ngày Trở Về 🎉
           </h2>{" "}
         </div>
         {isEventDay && <Fireworks />}
@@ -41,6 +41,7 @@ export default function App() {
      </div>
       <section className="banner">
         <h2>Kỷ Niệm 20 Năm Ra Trường</h2>
+    
         <p>Niên Khóa 2001 - 2005</p>
         <div>
           Quảng Điền, <span class="banner_timeCountdown">ngày 31/08/2025</span>
